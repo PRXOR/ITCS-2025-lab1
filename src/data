@@ -1,0 +1,163 @@
+===== Running: make mnk =====
+gcc -o ../bin/main -O0 common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 1us 240ns
+Elapsed time (Machine readable): 1240
+===== Running: make mnk I=1 =====
+Elapsed time (Human readable): 94s 512ms 467us 377ns
+Elapsed time (Machine readable): 94512467377
+===== Running: make mnk I=2 =====
+Elapsed time (Human readable): 0s 46ms 885us 613ns
+Elapsed time (Machine readable): 46885613
+===== Running: make mnk I=3 =====
+Elapsed time (Human readable): 2s 984ms 4us 213ns
+Elapsed time (Machine readable): 2984004213
+===== Running: make mnk I=4 =====
+Elapsed time (Human readable): 190s 449ms 924us 662ns
+Elapsed time (Machine readable): 190449924662
+===== Running: make mnk I=5 =====
+Elapsed time (Human readable): 4s 383ms 472us 820ns
+Elapsed time (Machine readable): 4383472820
+===== Running: make mnk I=6 =====
+Elapsed time (Human readable): 4s 366ms 7us 902ns
+Elapsed time (Machine readable): 4366007902
+===== Running: make mnk I=7 =====
+Elapsed time (Human readable): 21s 770ms 747us 308ns
+Elapsed time (Machine readable): 21770747308
+===== Running: make mnk I=8 =====
+Elapsed time (Human readable): 21s 639ms 359us 837ns
+Elapsed time (Machine readable): 21639359837
+===== Running: make mkn =====
+Elapsed time (Human readable): 0s 0ms 1us 154ns
+Elapsed time (Machine readable): 1154
+===== Running: make mkn I=1 =====
+Elapsed time (Human readable): 13s 748ms 815us 449ns
+Elapsed time (Machine readable): 13748815449
+===== Running: make mkn I=2 =====
+Elapsed time (Human readable): 0s 26ms 539us 772ns
+Elapsed time (Machine readable): 26539772
+===== Running: make mkn I=3 =====
+Elapsed time (Human readable): 0s 605ms 841us 98ns
+Elapsed time (Machine readable): 605841098
+===== Running: make mkn I=4 =====
+Elapsed time (Human readable): 28s 817ms 318us 50ns
+Elapsed time (Machine readable): 28817318050
+===== Running: make mkn I=5 =====
+Elapsed time (Human readable): 0s 903ms 206us 213ns
+Elapsed time (Machine readable): 903206213
+===== Running: make mkn I=6 =====
+Elapsed time (Human readable): 0s 848ms 605us 25ns
+Elapsed time (Machine readable): 848605025
+===== Running: make mkn I=7 =====
+Elapsed time (Human readable): 3s 390ms 792us 719ns
+Elapsed time (Machine readable): 3390792719
+===== Running: make mkn I=8 =====
+Elapsed time (Human readable): 3s 400ms 550us 115ns
+Elapsed time (Machine readable): 3400550115
+===== Running: make kmn =====
+Elapsed time (Human readable): 0s 0ms 1us 256ns
+Elapsed time (Machine readable): 1256
+===== Running: make kmn I=1 =====
+Elapsed time (Human readable): 15s 477ms 943us 277ns
+Elapsed time (Machine readable): 15477943277
+===== Running: make kmn I=2 =====
+Elapsed time (Human readable): 0s 13ms 839us 750ns
+Elapsed time (Machine readable): 13839750
+===== Running: make kmn I=3 =====
+Elapsed time (Human readable): 0s 520ms 824us 253ns
+Elapsed time (Machine readable): 520824253
+===== Running: make kmn I=4 =====
+Elapsed time (Human readable): 33s 283ms 755us 261ns
+Elapsed time (Machine readable): 33283755261
+===== Running: make kmn I=5 =====
+Elapsed time (Human readable): 1s 62ms 905us 306ns
+Elapsed time (Machine readable): 1062905306
+===== Running: make kmn I=6 =====
+Elapsed time (Human readable): 0s 957ms 281us 699ns
+Elapsed time (Machine readable): 957281699
+===== Running: make kmn I=7 =====
+Elapsed time (Human readable): 4s 15ms 929us 513ns
+Elapsed time (Machine readable): 4015929513
+===== Running: make kmn I=8 =====
+Elapsed time (Human readable): 3s 866ms 223us 589ns
+Elapsed time (Machine readable): 3866223589
+===== Running: make nmk =====
+Elapsed time (Human readable): 0s 0ms 1us 196ns
+Elapsed time (Machine readable): 1196
+===== Running: make nmk I=1 =====
+Elapsed time (Human readable): 94s 40ms 646us 276ns
+Elapsed time (Machine readable): 94040646276
+===== Running: make nmk I=2 =====
+Elapsed time (Human readable): 0s 46ms 74us 878ns
+Elapsed time (Machine readable): 46074878
+===== Running: make nmk I=3 =====
+Elapsed time (Human readable): 2s 972ms 437us 411ns
+Elapsed time (Machine readable): 2972437411
+===== Running: make nmk I=4 =====
+Elapsed time (Human readable): 189s 936ms 46us 897ns
+Elapsed time (Machine readable): 189936046897
+===== Running: make nmk I=5 =====
+Elapsed time (Human readable): 4s 102ms 417us 803ns
+Elapsed time (Machine readable): 4102417803
+===== Running: make nmk I=6 =====
+Elapsed time (Human readable): 4s 196ms 959us 554ns
+Elapsed time (Machine readable): 4196959554
+===== Running: make nmk I=7 =====
+Elapsed time (Human readable): 21s 997ms 602us 686ns
+Elapsed time (Machine readable): 21997602686
+===== Running: make nmk I=8 =====
+Elapsed time (Human readable): 21s 712ms 967us 973ns
+Elapsed time (Machine readable): 21712967973
+===== Running: make nkm =====
+Elapsed time (Human readable): 0s 0ms 1us 381ns
+Elapsed time (Machine readable): 1381
+===== Running: make nkm I=1 =====
+Elapsed time (Human readable): 136s 295ms 202us 540ns
+Elapsed time (Machine readable): 136295202540
+===== Running: make nkm I=2 =====
+Elapsed time (Human readable): 0s 28ms 193us 557ns
+Elapsed time (Machine readable): 28193557
+===== Running: make nkm I=3 =====
+Elapsed time (Human readable): 1s 209ms 564us 544ns
+Elapsed time (Machine readable): 1209564544
+===== Running: make nkm I=4 =====
+Elapsed time (Human readable): 204s 424ms 559us 119ns
+Elapsed time (Machine readable): 204424559119
+===== Running: make nkm I=5 =====
+Elapsed time (Human readable): 8s 513ms 570us 556ns
+Elapsed time (Machine readable): 8513570556
+===== Running: make nkm I=6 =====
+Elapsed time (Human readable): 6s 575ms 852us 964ns
+Elapsed time (Machine readable): 6575852964
+===== Running: make nkm I=7 =====
+Elapsed time (Human readable): 35s 184ms 299us 349ns
+Elapsed time (Machine readable): 35184299349
+===== Running: make nkm I=8 =====
+Elapsed time (Human readable): 32s 138ms 947us 502ns
+Elapsed time (Machine readable): 32138947502
+===== Running: make knm =====
+Elapsed time (Human readable): 0s 0ms 1us 628ns
+Elapsed time (Machine readable): 1628
+===== Running: make knm I=1 =====
+Elapsed time (Human readable): 136s 410ms 55us 538ns
+Elapsed time (Machine readable): 136410055538
+===== Running: make knm I=2 =====
+Elapsed time (Human readable): 0s 14ms 406us 5ns
+Elapsed time (Machine readable): 14406005
+===== Running: make knm I=3 =====
+Elapsed time (Human readable): 0s 845ms 897us 667ns
+Elapsed time (Machine readable): 845897667
+===== Running: make knm I=4 =====
+Elapsed time (Human readable): 200s 238ms 329us 673ns
+Elapsed time (Machine readable): 200238329673
+===== Running: make knm I=5 =====
+Elapsed time (Human readable): 8s 189ms 167us 195ns
+Elapsed time (Machine readable): 8189167195
+===== Running: make knm I=6 =====
+Elapsed time (Human readable): 6s 694ms 773us 249ns
+Elapsed time (Machine readable): 6694773249
+===== Running: make knm I=7 =====
+Elapsed time (Human readable): 34s 29ms 210us 452ns
+Elapsed time (Machine readable): 34029210452
+===== Running: make knm I=8 =====
+Elapsed time (Human readable): 32s 80ms 104us 916ns
+Elapsed time (Machine readable): 32080104916
