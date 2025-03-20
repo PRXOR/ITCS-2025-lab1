@@ -1,0 +1,28 @@
+===== Running: make mnkkmn_b32 =====
+gcc -o ../bin/main -O0 common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 1us 488ns
+Elapsed time (Machine readable): 1488
+===== Running: make mnkkmn_b32 I=1 =====
+Elapsed time (Human readable): 27s 787ms 481us 427ns
+Elapsed time (Machine readable): 27787481427
+===== Running: make mnkkmn_b32 I=2 =====
+Elapsed time (Human readable): 0s 13ms 876us 869ns
+Elapsed time (Machine readable): 13876869
+===== Running: make mnkkmn_b32 I=3 =====
+Elapsed time (Human readable): 0s 861ms 21us 600ns
+Elapsed time (Machine readable): 861021600
+===== Running: make mnkkmn_b32 I=4 =====
+Elapsed time (Human readable): 57s 955ms 423us 377ns
+Elapsed time (Machine readable): 57955423377
+===== Running: make mnkkmn_b32 I=5 =====
+Elapsed time (Human readable): 1s 433ms 715us 970ns
+Elapsed time (Machine readable): 1433715970
+===== Running: make mnkkmn_b32 I=6 =====
+Elapsed time (Human readable): 1s 608ms 694us 768ns
+Elapsed time (Machine readable): 1608694768
+===== Running: make mnkkmn_b32 I=7 =====
+Elapsed time (Human readable): 6s 686ms 314us 35ns
+Elapsed time (Machine readable): 6686314035
+===== Running: make mnkkmn_b32 I=8 =====
+Elapsed time (Human readable): 7s 53ms 992us 688ns
+Elapsed time (Machine readable): 7053992688

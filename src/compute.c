@@ -90,14 +90,53 @@ void compute_row_major_knm() {
 
 void compute_y_transpose_mnk() {
     // TODO: task 2
+    zero_z();
+    for (int i = 0; i != m; ++i) {
+        for (int j = 0; j != n; ++j) {
+            for (int l = 0; l != k; ++l) {
+                Z[i][j] += X[i][l] * YP[j][l];
+            }
+        }
+    }
+    
 }
 
 void compute_row_major_mnkkmn_b32() {
     // TODO: task 2
+    zero_z();
+    const int B = 4;
+    for (int ii = 0; ii != m; ii += B)
+    {
+        for (int jj = 0; jj != n; jj += B)
+        {
+            for (int ll = 0; ll != k; ll += B)
+            {
+                for (int l = ll; l != ll + B; ++l)
+                {
+                    for (int j = jj; j != jj + B; ++j)
+                    {
+                        for (int i = ii; i != ii + B; ++i)
+                        {
+                            Z[i][j] += X[i][l] * Y[l][j];
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 void compute_row_major_mnk_lu2() {
     // TODO: task 2
+    zero_z();
+    for (int i = 0; i != m; ++i) {
+        for (int j = 0; j != n; ++j) {
+            for (int l = 0; l != k; l += 2) {
+                Z[i][j] += X[i][l] * Y[l][j];
+                Z[i][j] += X[i][l + 1] * Y[l + 1][j];
+            }
+        }
+    }
 }
 
 void compute_simd() {

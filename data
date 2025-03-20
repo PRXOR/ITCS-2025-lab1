@@ -1,0 +1,16 @@
+pi@raspberrypi:~/ITCS-2025-lab1/src $ # in src/                             
+make mnk
+Elapsed time (Human readable): 0s 0ms 101us 57ns
+Elapsed time (Machine readable): 10157
+gcc -o ../bin/main -O0 common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 1us 65ns
+Elapsed time (Machine readable): 1065
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+pi@raspberrypi:~/ITCS-2025-lab1/src $ make mnk I=1
+Elapsed time (Human readable): 93s 29ms 960us 322ns
+Elapsed time (Machine readable): 93029960322
+
+pi@raspberrypi:~/ITCS-2025-lab1/src $ make mnk I=2
+Elapsed time (Human readable): 0s 46ms 479us 450ns
+Elapsed time (Machine readable): 46479450

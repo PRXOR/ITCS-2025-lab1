@@ -1,0 +1,28 @@
+===== Running: make t_mnk =====
+gcc -o ../bin/main -O0 common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 1us 166ns
+Elapsed time (Machine readable): 1166
+===== Running: make t_mnk I=1 =====
+Elapsed time (Human readable): 14s 195ms 181us 878ns
+Elapsed time (Machine readable): 14195181878
+===== Running: make t_mnk I=2 =====
+Elapsed time (Human readable): 0s 7ms 116us 619ns
+Elapsed time (Machine readable): 7116619
+===== Running: make t_mnk I=3 =====
+Elapsed time (Human readable): 0s 460ms 293us 17ns
+Elapsed time (Machine readable): 460293017
+===== Running: make t_mnk I=4 =====
+Elapsed time (Human readable): 29s 45ms 600us 870ns
+Elapsed time (Machine readable): 29045600870
+===== Running: make t_mnk I=5 =====
+Elapsed time (Human readable): 0s 884ms 435us 750ns
+Elapsed time (Machine readable): 884435750
+===== Running: make t_mnk I=6 =====
+Elapsed time (Human readable): 1s 18ms 855us 672ns
+Elapsed time (Machine readable): 1018855672
+===== Running: make t_mnk I=7 =====
+Elapsed time (Human readable): 3s 390ms 603us 912ns
+Elapsed time (Machine readable): 3390603912
+===== Running: make t_mnk I=8 =====
+Elapsed time (Human readable): 3s 622ms 318us 8ns
+Elapsed time (Machine readable): 3622318008

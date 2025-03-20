@@ -1,0 +1,27 @@
+===== Running: make mnk_lu2 =====
+Elapsed time (Human readable): 0s 0ms 1us 79ns
+Elapsed time (Machine readable): 1079
+===== Running: make mnk_lu2 I=1 =====
+Elapsed time (Human readable): 89s 829ms 800us 857ns
+Elapsed time (Machine readable): 89829800857
+===== Running: make mnk_lu2 I=2 =====
+Elapsed time (Human readable): 0s 46ms 239us 756ns
+Elapsed time (Machine readable): 46239756
+===== Running: make mnk_lu2 I=3 =====
+Elapsed time (Human readable): 2s 918ms 705us 316ns
+Elapsed time (Machine readable): 2918705316
+===== Running: make mnk_lu2 I=4 =====
+Elapsed time (Human readable): 185s 283ms 496us 38ns
+Elapsed time (Machine readable): 185283496038
+===== Running: make mnk_lu2 I=5 =====
+Elapsed time (Human readable): 4s 89ms 310us 890ns
+Elapsed time (Machine readable): 4089310890
+===== Running: make mnk_lu2 I=6 =====
+Elapsed time (Human readable): 4s 142ms 21us 702ns
+Elapsed time (Machine readable): 4142021702
+===== Running: make mnk_lu2 I=7 =====
+Elapsed time (Human readable): 19s 905ms 230us 328ns
+Elapsed time (Machine readable): 19905230328
+===== Running: make mnk_lu2 I=8 =====
+Elapsed time (Human readable): 20s 844ms 509us 20ns
+Elapsed time (Machine readable): 20844509020
