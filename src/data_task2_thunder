@@ -1,0 +1,28 @@
+===== Running: make thunder =====
+gcc -o ../bin/main -O0 common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 0us 673ns
+Elapsed time (Machine readable): 673
+===== Running: make thunder I=1 =====
+Elapsed time (Human readable): 5s 463ms 430us 562ns
+Elapsed time (Machine readable): 5463430562
+===== Running: make thunder I=2 =====
+Elapsed time (Human readable): 0s 2ms 422us 342ns
+Elapsed time (Machine readable): 2422342
+===== Running: make thunder I=3 =====
+Elapsed time (Human readable): 0s 156ms 56us 628ns
+Elapsed time (Machine readable): 156056628
+===== Running: make thunder I=4 =====
+Elapsed time (Human readable): 9s 992ms 74us 73ns
+Elapsed time (Machine readable): 9992074073
+===== Running: make thunder I=5 =====
+Elapsed time (Human readable): 0s 392ms 555us 118ns
+Elapsed time (Machine readable): 392555118
+===== Running: make thunder I=6 =====
+Elapsed time (Human readable): 0s 412ms 654us 875ns
+Elapsed time (Machine readable): 412654875
+===== Running: make thunder I=7 =====
+Elapsed time (Human readable): 1s 481ms 644us 880ns
+Elapsed time (Machine readable): 1481644880
+===== Running: make thunder I=8 =====
+Elapsed time (Human readable): 1s 462ms 751us 975ns
+Elapsed time (Machine readable): 1462751975

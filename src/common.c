@@ -1,5 +1,9 @@
 #include "common.h"
 
+#ifdef SIMD
+#include <arm_neon.h>
+#endif
+
 LOAD LOAD_SELECT;                   // 定义
 COMPUTE COMPUTE_SELECT;             // 定义
 COMPARE COMPARE_SELECT;             // 定义
@@ -30,3 +34,9 @@ uint64_t Z[M][N]; // target
 uint64_t ZP[N][M]; // target
 uint64_t *Zp; // target
 uint64_t R[M][N]; // reference
+
+#ifdef SIMD
+uint16x4_t XC[M][K/4]; //X_compressed
+uint16x4_t YPC[N][K/4];
+#endif
+

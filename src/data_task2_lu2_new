@@ -1,0 +1,28 @@
+===== Running: make mnk_lu2 =====
+gcc -o ../bin/main -O0 common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 0us 872ns
+Elapsed time (Machine readable): 872
+===== Running: make mnk_lu2 I=1 =====
+Elapsed time (Human readable): 61s 308ms 533us 991ns
+Elapsed time (Machine readable): 61308533991
+===== Running: make mnk_lu2 I=2 =====
+Elapsed time (Human readable): 0s 30ms 387us 434ns
+Elapsed time (Machine readable): 30387434
+===== Running: make mnk_lu2 I=3 =====
+Elapsed time (Human readable): 1s 955ms 408us 649ns
+Elapsed time (Machine readable): 1955408649
+===== Running: make mnk_lu2 I=4 =====
+Elapsed time (Human readable): 124s 66ms 427us 193ns
+Elapsed time (Machine readable): 124066427193
+===== Running: make mnk_lu2 I=5 =====
+Elapsed time (Human readable): 2s 923ms 334us 241ns
+Elapsed time (Machine readable): 2923334241
+===== Running: make mnk_lu2 I=6 =====
+Elapsed time (Human readable): 2s 973ms 148us 178ns
+Elapsed time (Machine readable): 2973148178
+===== Running: make mnk_lu2 I=7 =====
+Elapsed time (Human readable): 15s 971ms 489us 391ns
+Elapsed time (Machine readable): 15971489391
+===== Running: make mnk_lu2 I=8 =====
+Elapsed time (Human readable): 14s 757ms 275us 828ns
+Elapsed time (Machine readable): 14757275828

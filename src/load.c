@@ -3,6 +3,10 @@
 #include "common.h"
 #include "load.h"
 
+#ifdef SIMD
+#include <arm_neon.h>
+#endif
+
 int load(const char* file) {
     FILE* fp = fopen(file, "r");
     if (!fp) return 1;
@@ -40,6 +44,7 @@ int load(const char* file) {
                 case LOAD_Y_TRANSPOSE_32:
                     fscanf(fp, "%" SCNx32, &X32[i][j]);
                     break;
+                case LOAD_SIMD:
                 case LOAD_Y_TRANSPOSE_16:
                     fscanf(fp, "%" SCNx16, &X16[i][j]);
                     break;
@@ -49,6 +54,21 @@ int load(const char* file) {
             }
         }
     }
+    #ifdef SIMD
+    if(LOAD_SELECT == LOAD_SIMD)
+    {
+        for (register int i = 0; i != m; ++i) {
+            for (register int j = 0; j != k; j+=4) {
+                uint16_t temp[4];
+                temp[0] = X16[i][j];
+                temp[1] = X16[i][j+1];
+                temp[2] = X16[i][j+2];
+                temp[3] = X16[i][j+3];
+                XC[i][j/4] = vld1_u16(temp);
+            }
+        }
+    }
+    #endif
     //* read to Y
     for (int i = 0; i != k; ++i) {
         for (int j = 0; j != n; ++j) {
@@ -62,6 +82,7 @@ int load(const char* file) {
                 case LOAD_Y_TRANSPOSE_32:
                     fscanf(fp, "%" SCNx32, &YP32[j][i]);
                     break;
+                case LOAD_SIMD:
                 case LOAD_Y_TRANSPOSE_16:
                     fscanf(fp, "%" SCNx16, &YP16[j][i]);
                     break;
@@ -71,6 +92,22 @@ int load(const char* file) {
             }
         }
     }
+
+    #ifdef SIMD
+    if(LOAD_SELECT == LOAD_SIMD)
+    {
+        for (register int i = 0; i != n; ++i) {
+            for (register int j = 0; j != k; j+=4) {
+                uint16_t temp[4];
+                temp[0] = YP16[i][j];
+                temp[1] = YP16[i][j+1];
+                temp[2] = YP16[i][j+2];
+                temp[3] = YP16[i][j+3];
+                YPC[i][j/4] = vld1_u16(temp);
+            }
+        }
+    }
+    #endif
 
     for (int i = 0; i!= m; ++i) {
         for (int j = 0; j!= n; ++j) {

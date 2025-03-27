@@ -131,10 +131,33 @@ void compute_row_major_mnk_lu2() {
     zero_z();
     for (int i = 0; i != m; ++i) {
         for (int j = 0; j != n; ++j) {
+            uint64_t Z1=0,Z2=0;
             for (int l = 0; l != k; l += 2) {
-                Z[i][j] += X[i][l] * Y[l][j];
-                Z[i][j] += X[i][l + 1] * Y[l + 1][j];
+                Z1 += X[i][l] * Y[l][j];
+                Z2 += X[i][l + 1] * Y[l + 1][j];
             }
+            Z[i][j]=Z1+Z2;
+        }
+    }
+}
+
+void compute_thunder(){
+    zero_z();
+    //const uint64_t column = n;
+    for (register int i = 0; i != m; ++i) {
+        for (register int j = 0; j != n; ++j) {
+            register uint64_t Z1=0,Z2=0,Z3=0,Z4=0;
+            register uint64_t* X1=&X[i][0];
+            register uint64_t* Y1=&YP[j][0];
+            for (register int l = 0; l != k; l += 4) {
+                Z1 += (*(X1)) * (*(Y1));
+                Z2 += (*(X1+1)) * (*(Y1+1));
+                Z3 += (*(X1+2)) * (*(Y1+2));
+                Z4 += (*(X1+3)) * (*(Y1+3));
+                X1+=4;
+                Y1+=4;
+            }
+            Z[i][j]=Z1+Z2+Z3+Z4;
         }
     }
 }
@@ -142,6 +165,20 @@ void compute_row_major_mnk_lu2() {
 void compute_simd() {
 #ifdef SIMD
     // TODO: task 3
+    zero_z();
+    register int kk = k / 4;
+    for (register int i = 0; i != m; ++i) {
+        for (register int j = 0; j != n; ++j) {
+            register uint32x4_t zt = vmovq_n_u32(0);
+            //register uint32_t zz = 0;
+            for (register int l = 0; l != kk; ++l)
+            {
+                zt = vmull_u16(XC[i][l],YPC[j][l]);
+                Z[i][j] += vaddlvq_u32(zt);
+            }
+            //Z[i][j] = zz;
+        }
+    }
 #endif
 }
 
@@ -198,6 +235,9 @@ uint64_t compute() {
         case COMPUTE_ROW_MAJOR_MNK_LU2:
             //printf("COMPUTE_ROW_MAJOR_MNK_LU2\n");
             compute_row_major_mnk_lu2();
+            break;
+        case COMPUTE_THUNDER:
+            compute_thunder();
             break;
         case COMPUTE_SIMD:
             //printf("COMPUTE_SIMD\n");

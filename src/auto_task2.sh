@@ -4,7 +4,7 @@
 > data
 
 # 定义所有需要测试的顺序组合
-orders=(mnk_lu2)
+orders=(simd o3 simd-o3)
 
 # 遍历每个顺序
 for order in "${orders[@]}"; do

@@ -1,0 +1,83 @@
+===== Running: make simd =====
+gcc -o ../bin/main-simd -O0 -DSIMD common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 0us 575ns
+Elapsed time (Machine readable): 575
+===== Running: make simd I=1 =====
+Elapsed time (Human readable): 4s 664ms 618us 94ns
+Elapsed time (Machine readable): 4664618094
+===== Running: make simd I=2 =====
+Elapsed time (Human readable): 0s 2ms 82us 472ns
+Elapsed time (Machine readable): 2082472
+===== Running: make simd I=3 =====
+Elapsed time (Human readable): 0s 134ms 301us 732ns
+Elapsed time (Machine readable): 134301732
+===== Running: make simd I=4 =====
+Elapsed time (Human readable): 8s 358ms 357us 871ns
+Elapsed time (Machine readable): 8358357871
+===== Running: make simd I=5 =====
+Elapsed time (Human readable): 0s 334ms 575us 265ns
+Elapsed time (Machine readable): 334575265
+===== Running: make simd I=6 =====
+Elapsed time (Human readable): 0s 340ms 500us 377ns
+Elapsed time (Machine readable): 340500377
+===== Running: make simd I=7 =====
+Elapsed time (Human readable): 1s 267ms 552us 943ns
+Elapsed time (Machine readable): 1267552943
+===== Running: make simd I=8 =====
+Elapsed time (Human readable): 1s 250ms 610us 750ns
+Elapsed time (Machine readable): 1250610750
+===== Running: make o3 =====
+gcc -o ../bin/main-o3 -O3 -DSIMD common.c compare.c compute.c load.c main.c
+Elapsed time (Human readable): 0s 0ms 0us 267ns
+Elapsed time (Machine readable): 267
+===== Running: make o3 I=1 =====
+Elapsed time (Human readable): 44s 164ms 462us 579ns
+Elapsed time (Machine readable): 44164462579
+===== Running: make o3 I=2 =====
+Elapsed time (Human readable): 0s 15ms 255us 241ns
+Elapsed time (Machine readable): 15255241
+===== Running: make o3 I=3 =====
+Elapsed time (Human readable): 0s 939ms 646us 340ns
+Elapsed time (Machine readable): 939646340
+===== Running: make o3 I=4 =====
+Elapsed time (Human readable): 57s 268ms 234us 265ns
+Elapsed time (Machine readable): 57268234265
+===== Running: make o3 I=5 =====
+Elapsed time (Human readable): 1s 249ms 572us 768ns
+Elapsed time (Machine readable): 1249572768
+===== Running: make o3 I=6 =====
+Elapsed time (Human readable): 1s 359ms 104us 819ns
+Elapsed time (Machine readable): 1359104819
+===== Running: make o3 I=7 =====
+Elapsed time (Human readable): 10s 228ms 748us 579ns
+Elapsed time (Machine readable): 10228748579
+===== Running: make o3 I=8 =====
+Elapsed time (Human readable): 8s 271ms 1us 797ns
+Elapsed time (Machine readable): 8271001797
+===== Running: make simd-o3 =====
+Elapsed time (Human readable): 0s 0ms 0us 181ns
+Elapsed time (Machine readable): 181
+===== Running: make simd-o3 I=1 =====
+Elapsed time (Human readable): 1s 287ms 682us 499ns
+Elapsed time (Machine readable): 1287682499
+===== Running: make simd-o3 I=2 =====
+Elapsed time (Human readable): 0s 0ms 387us 35ns
+Elapsed time (Machine readable): 387035
+===== Running: make simd-o3 I=3 =====
+Elapsed time (Human readable): 0s 29ms 646us 886ns
+Elapsed time (Machine readable): 29646886
+===== Running: make simd-o3 I=4 =====
+Elapsed time (Human readable): 1s 718ms 523us 77ns
+Elapsed time (Machine readable): 1718523077
+===== Running: make simd-o3 I=5 =====
+Elapsed time (Human readable): 0s 110ms 15us 416ns
+Elapsed time (Machine readable): 110015416
+===== Running: make simd-o3 I=6 =====
+Elapsed time (Human readable): 0s 113ms 935us 947ns
+Elapsed time (Machine readable): 113935947
+===== Running: make simd-o3 I=7 =====
+Elapsed time (Human readable): 0s 379ms 612us 532ns
+Elapsed time (Machine readable): 379612532
+===== Running: make simd-o3 I=8 =====
+Elapsed time (Human readable): 0s 385ms 157us 967ns
+Elapsed time (Machine readable): 385157967

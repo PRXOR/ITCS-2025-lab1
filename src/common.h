@@ -1,6 +1,10 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#ifdef SIMD
+#include <arm_neon.h>
+#endif
+
 #include <stdint.h>
 #include <inttypes.h>
 
@@ -27,6 +31,7 @@ typedef enum LOAD {
     LOAD_P_Y_TRANSPOSE = 31,
     LOAD_P_Y_TRANSPOSE_32 = 32,
     LOAD_P_Y_TRANSPOSE_16 = 33,
+    LOAD_SIMD = 10,
 } LOAD;
 
 typedef enum COMPUTE {
@@ -39,6 +44,7 @@ typedef enum COMPUTE {
     COMPUTE_Y_TRANSPOSE_MNK = 101,
     COMPUTE_ROW_MAJOR_MNKKMN_B32 = 111,
     COMPUTE_ROW_MAJOR_MNK_LU2 = 121,
+    COMPUTE_THUNDER = 131,
     COMPUTE_SIMD = 201,
 } COMPUTE;
 
@@ -79,5 +85,11 @@ extern uint64_t Z[M][N]; // target
 extern uint64_t ZP[N][M]; // target
 extern uint64_t *Zp; // target
 extern uint64_t R[M][N]; // reference
+
+#ifdef SIMD
+extern uint16x4_t XC[M][K/4]; //X_compressed
+extern uint16x4_t YPC[N][K/4];
+#endif
+
 
 #endif // COMMON_H
