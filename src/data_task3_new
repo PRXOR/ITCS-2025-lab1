@@ -1,0 +1,81 @@
+===== Running: make simd =====
+Elapsed time (Human readable): 0s 0ms 0us 577ns
+Elapsed time (Machine readable): 577
+===== Running: make simd I=1 =====
+Elapsed time (Human readable): 3s 265ms 938us 494ns
+Elapsed time (Machine readable): 3265938494
+===== Running: make simd I=2 =====
+Elapsed time (Human readable): 0s 1ms 419us 295ns
+Elapsed time (Machine readable): 1419295
+===== Running: make simd I=3 =====
+Elapsed time (Human readable): 0s 96ms 995us 701ns
+Elapsed time (Machine readable): 96995701
+===== Running: make simd I=4 =====
+Elapsed time (Human readable): 6s 182ms 114us 168ns
+Elapsed time (Machine readable): 6182114168
+===== Running: make simd I=5 =====
+Elapsed time (Human readable): 0s 240ms 904us 462ns
+Elapsed time (Machine readable): 240904462
+===== Running: make simd I=6 =====
+Elapsed time (Human readable): 0s 255ms 569us 714ns
+Elapsed time (Machine readable): 255569714
+===== Running: make simd I=7 =====
+Elapsed time (Human readable): 0s 904ms 924us 956ns
+Elapsed time (Machine readable): 904924956
+===== Running: make simd I=8 =====
+Elapsed time (Human readable): 0s 909ms 473us 912ns
+Elapsed time (Machine readable): 909473912
+===== Running: make o3 =====
+Elapsed time (Human readable): 0s 0ms 0us 261ns
+Elapsed time (Machine readable): 261
+===== Running: make o3 I=1 =====
+Elapsed time (Human readable): 41s 967ms 383us 669ns
+Elapsed time (Machine readable): 41967383669
+===== Running: make o3 I=2 =====
+Elapsed time (Human readable): 0s 15ms 201us 54ns
+Elapsed time (Machine readable): 15201054
+===== Running: make o3 I=3 =====
+Elapsed time (Human readable): 0s 958ms 5us 323ns
+Elapsed time (Machine readable): 958005323
+===== Running: make o3 I=4 =====
+Elapsed time (Human readable): 59s 312ms 737us 604ns
+Elapsed time (Machine readable): 59312737604
+===== Running: make o3 I=5 =====
+Elapsed time (Human readable): 1s 296ms 866us 358ns
+Elapsed time (Machine readable): 1296866358
+===== Running: make o3 I=6 =====
+Elapsed time (Human readable): 1s 391ms 831us 921ns
+Elapsed time (Machine readable): 1391831921
+===== Running: make o3 I=7 =====
+Elapsed time (Human readable): 11s 374ms 338us 908ns
+Elapsed time (Machine readable): 11374338908
+===== Running: make o3 I=8 =====
+Elapsed time (Human readable): 8s 356ms 18us 573ns
+Elapsed time (Machine readable): 8356018573
+===== Running: make simd-o3 =====
+Elapsed time (Human readable): 0s 0ms 0us 197ns
+Elapsed time (Machine readable): 197
+===== Running: make simd-o3 I=1 =====
+Elapsed time (Human readable): 1s 284ms 817us 128ns
+Elapsed time (Machine readable): 1284817128
+===== Running: make simd-o3 I=2 =====
+Elapsed time (Human readable): 0s 0ms 397us 998ns
+Elapsed time (Machine readable): 397998
+===== Running: make simd-o3 I=3 =====
+Elapsed time (Human readable): 0s 28ms 810us 778ns
+Elapsed time (Machine readable): 28810778
+===== Running: make simd-o3 I=4 =====
+Elapsed time (Human readable): 1s 728ms 622us 37ns
+Elapsed time (Machine readable): 1728622037
+===== Running: make simd-o3 I=5 =====
+Elapsed time (Human readable): 0s 105ms 750us 803ns
+Elapsed time (Machine readable): 105750803
+===== Running: make simd-o3 I=6 =====
+Elapsed time (Human readable): 0s 114ms 32us 719ns
+Elapsed time (Machine readable): 114032719
+===== Running: make simd-o3 I=7 =====
+Elapsed time (Human readable): 0s 381ms 725us 664ns
+Elapsed time (Machine readable): 381725664
+===== Running: make simd-o3 I=8 =====
+Elapsed time (Human readable): 0s 385ms 550us 463ns
+Elapsed time (Machine readable): 385550463
