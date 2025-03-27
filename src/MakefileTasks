@@ -51,7 +51,7 @@ mnk_lu2: $(M)
 thunder: $(M)
 	@$(M) $(IN) 11 131 1
 
-grade2: t_mnk
+grade2: thunder
 
 tasks2:
 	@echo Task 2
